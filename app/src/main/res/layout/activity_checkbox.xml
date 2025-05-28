@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="1.喜歡的文學類型："
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="純文學"
+        android:layout_marginLeft="10dp"
+        android:button="@drawable/checkbox_check_android"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="大眾文學"
+        android:layout_marginLeft="10dp"
+        android:button="@drawable/checkbox_check_android"/>
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="輕小說"
+        android:layout_marginLeft="10dp"
+        android:button="@drawable/checkbox_check_android"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="2.喜歡的書籍類型："
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="現代小說"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="經典小說"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="散文"
+        android:layout_marginLeft="10dp"/>
+
+</LinearLayout>

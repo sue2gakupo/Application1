@@ -8,23 +8,18 @@
     <ImageView
         android:layout_width="300dp"
         android:layout_height="200dp"
-        android:src="@drawable/picture01"
-        android:scaleType="center"
         android:layout_gravity="center_horizontal"
-        />
+        android:scaleType="center"
+        android:src="@drawable/picture01" />
 
     <ImageView
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:src="@drawable/picture01"
-        android:scaleType="fitXY"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
-        />
-<!--    marginTop 跟上面物件相隔30dp的距離-->
-
-
-
+        android:scaleType="fitXY"
+        android:src="@drawable/picture01" />
+    <!--marginTop 跟上面物件相隔30dp的距離-->
 
 
 </LinearLayout>

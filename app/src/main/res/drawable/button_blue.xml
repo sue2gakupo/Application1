@@ -17,8 +17,8 @@
 
             <stroke android:color="#AE93DF"
                     android:width="3dp"
-                    android:dashGap="5dp"
-                    android:dashWidth="16dp"/>
+                    android:dashGap="3dp"
+                    android:dashWidth="3dp"/>
             <!--stroke是虛線  dashGap是虛線的間隔，dashWidth是虛線的寬度-->
 
             <padding android:left="5dp"

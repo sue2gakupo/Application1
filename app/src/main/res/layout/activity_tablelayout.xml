@@ -139,27 +139,26 @@
         android:scaleType="fitXY"
         android:src="@drawable/check02_16" />
 
-    <TableRow
-        android:background="#00BCD4">
+    <TableRow android:background="#00BCD4">
 
         <TextView
             android:id="@+id/textView_01"
             android:layout_margin="2dp"
-            android:text="九日"
-            android:background="#B4D8F1"/>
+            android:background="#B4D8F1"
+            android:text="九日" />
 
         <TextView
             android:id="@+id/textView_02"
             android:layout_marginTop="2dp"
             android:layout_marginBottom="2dp"
-            android:text="Version 1.0"
-            android:background="#B4D8F1"/>
+            android:background="#B4D8F1"
+            android:text="Version 1.0" />
 
         <TextView
             android:id="@+id/textView_03"
             android:layout_margin="2dp"
-            android:text="Android 5.0"
-            android:background="#B4D8F1"/>
+            android:background="#B4D8F1"
+            android:text="Android 5.0" />
     </TableRow>
 
 </TableLayout>

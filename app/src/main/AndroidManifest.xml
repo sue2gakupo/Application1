@@ -7,17 +7,26 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Application1"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Application1"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".Activity_Textview_Java"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_ImageView_Java"
             android:exported="false" />
         <activity
             android:name=".Activity_Button_Java"
-            android:exported="true">
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" /> <!-- false代表停用 -->
+        <activity
+            android:name=".Activity_OnTouch_Java"
+            android:exported="true"> <!-- true代表啓用 -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

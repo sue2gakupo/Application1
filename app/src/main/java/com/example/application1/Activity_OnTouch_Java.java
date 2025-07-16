@@ -15,8 +15,6 @@ public class Activity_OnTouch_Java extends AppCompatActivity {
 
     TextView textview_change_pic, textview_change_scaletype;
 
-    int imageIndex = 0, scaleIndex = 0, i = 0;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,58 +31,41 @@ public class Activity_OnTouch_Java extends AppCompatActivity {
         textview_change_pic = findViewById(R.id.textview_change_pic);
         textview_change_scaletype = findViewById(R.id.textview_change_scaletype);
 
-        //設定圖片
+        textview_change_pic.setText("手勢觸發動作的形態：");
+        textview_change_scaletype.setText("");
+
+
         textview_change_pic.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
-
-                if (event.getAction() == MotionEvent.ACTION_DOWN) {      //ACTION_DOWN 按下去就會變 //ACTION_UP 按下後放開才會換圖片
-                    //getAction 抓event
-                    if (imageIndex == 2) {
-                        imageview_01.setImageResource(R.drawable.picture02);
-                        imageIndex = 1;
-                    } else {
-                        imageview_01.setImageResource(R.drawable.picture03);
-                        imageIndex = 2;
-                    }
+            public boolean onTouch(View v, MotionEvent motionEvent) {
+                if(motionEvent.getAction() == MotionEvent.ACTION_DOWN) {         //滑鼠按著"手勢觸發動作的形態："時發生
+                    textview_change_scaletype.setText("ACTION_DOWN 動作被觸發");
+                }else if(motionEvent.getAction() == MotionEvent.ACTION_UP){
+                    textview_change_scaletype.setText("ACTION_UP 動作被觸發");     //滑鼠按著"手勢觸發動作的形態："後放開時發生
+                } else if (motionEvent.getAction() == MotionEvent.ACTION_MOVE) {
+                    textview_change_scaletype.setText("ACTION_MOVE 動作被觸發");   //滑鼠按在"手勢觸發動作的形態："且左右滑動時發生
+                }else{
+                    textview_change_scaletype.setText("Action code - " + motionEvent.getAction());
                 }
+
+
                 return false;
             }
         });
 
-//        textview_change_scaletype.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                i++;
-//                textview_change_scaletype.setText("變更縮放模式 " + i);
-//                if (scaleIndex == 2) {
-//                    imageview_01.setScaleType(ImageView.ScaleType.FIT_CENTER);
-//                    scaleIndex = 1;
-//                } else {
-//                    imageview_01.setScaleType(ImageView.ScaleType.CENTER_CROP);
-//                    scaleIndex = 2;
-//                }
-//            }
-//        });
 
 
-        textview_change_scaletype.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
 
-                if (hasFocus) {
-                    i++;
-                    textview_change_scaletype.setText("變更縮放模式 " + i);
-                    if (scaleIndex == 2) {
-                        imageview_01.setScaleType(ImageView.ScaleType.FIT_CENTER);  // 因為解析度太小，所以變化不明顯
-                        scaleIndex = 1;
-                    } else {
-                        imageview_01.setScaleType(ImageView.ScaleType.CENTER_CROP);
-                        scaleIndex = 2;
-                    }
-                }
-            }
-        });
+
+
+
+
+
+
+
+
+
+
 
 
     }

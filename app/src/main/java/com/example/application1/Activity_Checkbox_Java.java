@@ -42,7 +42,7 @@ public class Activity_Checkbox_Java extends AppCompatActivity {
 
 //    CompoundButton.OnCheckedChangeListener checkedChangeListener_01 = new CompoundButton.OnCheckedChangeListener() {
 //        @Override
-//        public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+//        public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {  //跟radiobutton不一樣是用布林值
 //            strTemp = "已選擇：";
 //
 //            if (checkbox_answer_01.isChecked()) {
